@@ -1,0 +1,483 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/funcion.js" type="text/javascript">
+</script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Menú</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2" data-transition="flip">Historia f.c Barcelona</a></li>
+            <li><a href="#page3" data-transition="flip">Jugadores</a></li>
+			<li><a href="#page4" data-transition="flip">Camp Nou</a></li>
+
+		</ul>		
+	</div>
+	<div data-role="footer"data-position="fixed">
+       <div data-role="navbar" data-iconpos"top">
+       <ul>
+        <li>
+  <a href="#page" data-transition="flip" data-icon       ="home">
+          Inicio
+          </a>
+        </li>
+        <li>
+         <a href="#ayuda" data-transition="flip" data-icon="info">Ayuda</a>
+        </li>
+        <li>
+         <a href="#contacto" data-transition="flip" data-icon="alert">Contacto</a>
+        </li>
+       </ul>
+       </div>
+    
+		
+	 </div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+    <A data-role="button" data-rel="back" data-direction="reverse" data-icon="back">Atras</A>
+		<h1>Historia f.c Barcelona</h1>
+	</div>
+	<div data-role="content" align="center">
+    <p> Desliza sobre el cuadro de texto. </p>
+     <p Style="border:1px solid black;height:200px;width:200px;"></p>
+     <p><span style="color:red"></span></p>	
+    	
+		
+        <a href="#barca" data-rel="popup" data-position-to="window">
+<img src="imagnes/Barca.jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="barca">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/Barca.jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div>
+       <p>
+       <h3> El Fútbol Club Barcelona es una entidad polideportiva de Barcelona (España). 
+       <br>Fue fundado como club5 de fútbol el 29 de noviembre de 1899 por doce jóvenes           futbolistas aficionados.
+       </h3>
+        </p>
+        </center>	
+	</div>
+	<div data-role="footer" data-position="fixed">
+     <div data-role="navbar" data-iconpos"top">
+    <ul>
+    <li>
+      <a href="#page" data-transition="flip" data-icon="home">inicio</a>
+    </li>
+    <li>
+      <a href="#ayuda" data-transition="flip" data-icon="info">Ayuda</a>
+    </li>
+    <li>
+      <a href="#contacto" data-transition="flip" data-icon="alert">Contacto</a>
+    </li>
+    </ul>
+    </div>
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+    <A data-role="button" data-rel="back" data-direction="reverse" data-icon="back">Atras</A>
+
+		<h1>Página tres</h1>
+	</div>
+	<div data-role="content">
+    <center>
+    <table border="1">	
+		 <tr>
+          <td bgcolor="#FF0000">Porteros</td>
+         </tr>
+         <tr>
+          <td bgcolor="#0033FF">Nombre</td>
+          <td bgcolor="#0033FF">Numero</td>
+          <td bgcolor="#0033FF">Foto</td>
+         </tr>
+         <tr>
+          <Td>Marc-André Ter Stegen</Td>
+          <td>1</td>
+          <td><a href="#1" data-rel="popup" data-position-to="window">
+<img src="imagnes/ter_Stegen(portero)1.jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="1">
+      <p>Ter stegen</p> 
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/ter_Stegen(portero)1.jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div>
+         </tr>
+         <tr>
+          <td>Claudio Andrés Bravo Muñoz </td>
+          <td>13</td>
+          <td><a href="#13" data-rel="popup" data-position-to="window">
+<img src="imagnes/claudio-bravo(portero)13.jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="13">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/claudio-bravo(portero)13.jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div>
+          </td>
+         </tr>
+         <td bgcolor="#FF0000">Defensas</td>
+         </tr>
+         <tr>
+          <td bgcolor="#0033FF">Nombre</td>
+          <td bgcolor="#0033FF">Numero</td>
+          <td bgcolor="#0033FF">Foto</td>
+         </tr>
+         <tr>
+          <td>Martín Montoya Torralbo </td>
+          <td>2</td>
+          <td><a href="#2" data-rel="popup" data-position-to="window">
+<img src="imagnes/montoya2(D).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="2">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#2" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/montoya2(D).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+          <tr>
+          <td>Gerard Piqué Bernabéu </td>
+          <td>3</td>
+          <td><a href="#3" data-rel="popup" data-position-to="window">
+<img src="imagnes/piqué3(d).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="3">
+      <p>Este es piqué</p> 
+      <a href="#3" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/piqué3(d).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+          <tr>
+          <td>Javier Alejandro Mascherano </td>
+          <td>14</td>
+          <td><a href="#14" data-rel="popup" data-position-to="window">
+<img src="imagnes/mascherano14(d).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="14">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#14" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/mascherano14(d).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+          <tr>
+          <td>Marc Bartra Aregall </td>
+          <td>15</td>
+          <td><a href="#15" data-rel="popup" data-position-to="window">
+<img src="imagnes/bartra15(d).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="15">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#15" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/bartra15(d).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+          <tr>
+          <td>Douglas Pereira </td>
+          <td>16</td>
+          <td><a href="#16" data-rel="popup" data-position-to="window">
+<img src="imagnes/douglas(d).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="16">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#16" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/douglas(d).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+          <tr>
+          <td>Jordi Alba Ramos </td>
+          <td>18</td>
+          <td><a href="#18" data-rel="popup" data-position-to="window">
+<img src="imagnes/alba16(D).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="18">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#18" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/alba16(D).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+          <tr>
+          <td>Adriano Correia Claro </td>
+          <td>21</td>
+          <td><a href="#21" data-rel="popup" data-position-to="window">
+<img src="imagnes/adriano21(D).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="21">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#21" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/adriano21(D).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+          <tr>
+          <td>Daniel Alves da Silva </td>
+          <td>22</td>
+          <td><a href="#22" data-rel="popup" data-position-to="window">
+<img src="imagnes/alves22(D).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="22">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#22" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/alves22(D).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+         <tr>
+          <td bgcolor="#FF0000">Centrocampistas</td>
+         </tr>
+         <tr>
+          <td bgcolor="#0033FF">Nombre</td>
+          <td bgcolor="#0033FF">Numero</td>
+          <td bgcolor="#0033FF">Foto</td>
+         </tr>
+          <tr>
+          <td>Ivan Rakitić </td>
+          <td>4</td>
+          <td><a href="#4" data-rel="popup" data-position-to="window">
+<img src="imagnes/rakitic4(M).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="4">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#4" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/rakitic4(M).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+         <tr>
+          <td>Sergio Busquets Burgos </td>
+          <td>5</td>
+          <td><a href="#5" data-rel="popup" data-position-to="window">
+<img src="imagnes/busquets5(M).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="5">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#5" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/busquets5(M).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+          <tr>
+          <td>Xavier Hernández Creus </td>
+          <td>6</td>
+          <td><a href="#6" data-rel="popup" data-position-to="window">
+<img src="imagnes/xavi-hernandez6(M).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="6">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#6" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/xavi-hernandez6(M).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+         <tr>
+          <td>Andrés Iniesta Luján </td>
+          <td>8</td>
+          <td><a href="#8" data-rel="popup" data-position-to="window">
+<img src="imagnes/iniesta8(M).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="8">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#8" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/iniesta8(M).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+          <tr>
+          <td>Rafael Alcántara Do Nascimento </td>
+          <td>12</td>
+          <td><a href="#12" data-rel="popup" data-position-to="window">
+<img src="imagnes/rafinha12(M).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="12">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#12" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/rafinha12(M).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+         <tr>
+          <td>Alen Halilović </td>
+          <td>30</td>
+          <td><a href="#30" data-rel="popup" data-position-to="window">
+<img src="imagnes/alen30(;M).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="30">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#30" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/alen30(;M).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+         <tr>
+          <td bgcolor="#FF0000">Delanteros</td>
+         </tr>
+         <tr>
+          <td bgcolor="#0033FF">Nombre</td>
+          <td bgcolor="#0033FF">Numero</td>
+          <td bgcolor="#0033FF">Foto</td>
+         </tr>
+          <tr>
+          <td>Adama Traoré </td>
+          <td>27</td>
+          <td><a href="#27" data-rel="popup" data-position-to="window">
+<img src="imagnes/adama27(M).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="27">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#27" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/adama27(M).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+         <tr>
+          <td>Pedro Eliezer Rodríguez Ledesma </td>
+          <td>7</td>
+          <td><a href="#7" data-rel="popup" data-position-to="window">
+<img src="imagnes/pedro7(M).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="7">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#7" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/pedro7(M).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+         <tr>
+          <td>Luis Alberto Suárez Díaz </td>
+          <td>9</td>
+          <td><a href="#9" data-rel="popup" data-position-to="window">
+<img src="imagnes/luis-suarez9(M).jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="9">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#9" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/luis-suarez9(M).jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+         <tr>
+          <td>Lionel Andrés Messi </td>
+          <td>10</td>
+          <td><a href="#10" data-rel="popup" data-position-to="window">
+<img src="imagnes/messi(De)10.jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="10">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#10" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/messi(De)10.jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </tr>
+         <tr>
+          <td>Neymar da Silva Santos Júnior </td>
+          <td>11</td>
+          <td><a href="#11" data-rel="popup" data-position-to="window">
+<img src="imagnes/neymar11.jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="11">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#11" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/neymar11.jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div></td>
+         </center>
+          </table>     
+	</div>		
+	
+	<div data-role="footer" data-position="fixed">
+     <div data-role="navbar" data-iconpos"top">
+    <ul>
+    <li>
+      <a href="#page" data-transition="flip" data-icon="home">inicio</a>
+    </li>
+    <li>
+      <a href="#ayuda" data-transition="flip" data-icon="info">Ayuda</a>
+    </li>
+    <li>
+      <a href="#contacto" data-transition="flip" data-icon="alert">Contacto</a>
+    </li>
+    </ul>
+    </div>
+		
+        </div>
+
+	</div>
+
+
+<div data-role="page" id="page4">
+<div data-role="header">
+    <A data-role="button" data-rel="back" data-direction="reverse" data-icon="back">Atras</A>
+      <h3>Página cuatro</h3>
+ </div>
+<div data-role="content">
+          <center>	
+		   <h1>La construcción (1954-1957)</h1><br>
+           <h5>El proyecto del nuevo estadio fue encargado a los arquitectos<br>
+            Francesc Mitjans Miró, primo hermano de Miró-Sans, y Josep Soteras <br>
+            Mauri, con la colaboración de Lorenzo García Barbón. Más de un año después,<br>
+            el 11 de julio de 1955, el club adjudicó la obra a la empresa de
+            construcción<br>
+            INGAR SA, que presentó un presupuesto de 66.620.000 pesetas y un plazo de<br>
+            ejecución de 18 meses.</h5><br>
+            La construcción (1954-1957 )
+	         <a href="#campo" data-rel="popup" data-position-to="window">
+<img src="imagnes/camp1.jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="campo">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#campo" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagnes/camp1.jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div>
+          </center>
+	    </div>
+	<div data-role="footer"data-position="fixed">
+
+	 <div data-role="footer" data-position="fixed">
+     <div data-role="navbar" data-iconpos"top">
+    <ul>
+    <li>
+      <a href="#page" data-transition="flip" data-icon="home">inicio</a>
+    </li>
+    <li>
+      <a href="#ayuda" data-transition="flip" data-icon="info">Ayuda</a>
+    </li>
+    <li>
+      <a href="#contacto" data-transition="flip" data-icon="alert">Contacto</a>
+    </li>
+    </ul>
+    </div>
+	 </div>
+	
+        
+	
+
+</div>
+
+
+</body>
+</html>
